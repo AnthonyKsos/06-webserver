@@ -1,0 +1,52 @@
+{{!-- views/components/consultar-libro-page/consultar-libro.hbs --}}
+{{#*inline "styles"}}
+<link rel="stylesheet" href="/components/consultar-libro-page/consultar-libro.css">
+{{/inline}}
+
+<div class="container consultar-libro">
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 text-center">
+            <h2 class="title">CONSULTAR LIBRO</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-8 col-lg-6">
+            <form class="text-center">
+                <div class="form-group mb-3">
+                    <label for="tituloLibro" class="form-label">Ingrese el título del libro:</label>
+                    <input type="text" id="tituloLibro" class="form-control form-control-lg" placeholder="Ingrese título">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">CONSULTAR</button>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr class="table-header">
+                        <th>Código</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Editorial</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí puedes agregar las filas de los libros -->
+                    {{!-- Ejemplo de fila
+                    <tr>
+                        <td>001</td>
+                        <td>El libro de ejemplo</td>
+                        <td>Autor Ejemplo</td>
+                        <td>Editorial Ejemplo</td>
+                        <td>5</td>
+                        <td>Disponible</td>
+                    </tr>
+                    --}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

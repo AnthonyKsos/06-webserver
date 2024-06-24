@@ -1,0 +1,23 @@
+{{!-- views/components/consultar-usuario-page/consultar_datos.hbs --}}
+{{#*inline "styles"}}
+<link rel="stylesheet" href="/components/consultar-usuario-page/consultar-datos.css">
+{{/inline}}
+
+<div class="container consultar-datos">
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 text-center">
+            <h2 class="title">CONSULTAR DATOS</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <form class="text-center">
+                <div class="form-group mb-3">
+                    <label for="codigoUsuario" class="form-label">Inserte el código del usuario:</label>
+                    <input type="text" id="codigoUsuario" class="form-control form-control-lg" placeholder="Ingrese código">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">CONSULTAR</button>
+            </form>
+        </div>
+    </div>
+</div>

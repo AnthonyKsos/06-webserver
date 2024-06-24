@@ -1,0 +1,47 @@
+/* solicitar-prestamo.css */
+.solicitar-prestamo {
+  margin-top: 3rem;
+}
+
+.solicitar-prestamo .title {
+  background-color: #fdd835;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.solicitar-prestamo .form-label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.solicitar-prestamo .form-control {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+}
+
+.solicitar-prestamo .input-group-text {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-left: 0;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.solicitar-prestamo .btn-primary {
+  background-color: #00aaff;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.solicitar-prestamo .btn-primary:hover {
+  background-color: #008ecc;
+}

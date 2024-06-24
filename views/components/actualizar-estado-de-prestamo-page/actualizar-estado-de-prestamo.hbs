@@ -1,0 +1,64 @@
+{{!-- views/components/actualizar-estado-de-prestamo-page/actualizar-estado-de-prestamo.hbs --}}
+{{#*inline "styles"}}
+<link rel="stylesheet" href="/components/actualizar-estado-de-prestamo-page/actualizar-estado-de-prestamo.css">
+{{/inline}}
+
+<div class="container actualizar-prestamo">
+    <div class="row justify-content-center mt-5">
+        <div class="col-12 text-center">
+            <h2 class="title">ACTUALIZAR ESTADO DE PRÉSTAMO</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-10 col-lg-8">
+            <form class="text-center">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Buscar" aria-label="Buscar">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <select class="form-select form-select-lg" aria-label="Seleccionar Estado">
+                        <option selected>Estado</option>
+                        <option value="1">Pendiente</option>
+                        <option value="2">Entregado</option>
+                        <option value="3">Cancelado</option>
+                        <option value="4">Devuelto</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="reset" class="btn btn-secondary btn-lg">LIMPIAR</button>
+                    <button type="submit" class="btn btn-primary btn-lg">ACTUALIZAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <table class="table table-striped table-hover table-bordered text-center">
+                <thead class="table-header">
+                    <tr>
+                        <th>Código usuario</th>
+                        <th>Usuario</th>
+                        <th>Código del libro</th>
+                        <th>Título del libro</th>
+                        <th>Fecha de solicitud</th>
+                        <th>Fecha de Préstamo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí puedes agregar las filas de los préstamo -->
+                   
+                    <tr>
+                        <td>001</td>
+                        <td>Usuario Ejemplo</td>
+                        <td>12345</td>
+                        <td>El libro de ejemplo</td>
+                        <td>01/01/2022</td>
+                        <td>05/01/2022</td>
+                        <td>Pendiente</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

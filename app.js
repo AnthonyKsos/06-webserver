@@ -15,28 +15,29 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Ruta raíz para renderizar main.hbs
 app.get("/", (req, res) => {
-  res.render("components/inicio-page/inicio", { layout: "layouts/main" });
+  res.render("components/inicio-page/inicio", {
+    title: "Inicio - Biblioteca de la FISI",
+    layout: "layouts/main",
+  });
 });
 
-// Rutas del proyecto dsw Biblioteca de la FISI
 app.get("/consultar-datos", (req, res) => {
   res.render("components/consultar-datos-page/consultar-datos", {
+    title: "Consultar Datos - Biblioteca de la FISI",
     layout: "layouts/main",
   });
 });
 
 app.get("/consultar-libro", (req, res) => {
   res.render("components/consultar-libro-page/consultar-libro", {
-    nombre: "UNMSM",
-    titulo: "Biblioteca de la FISI",
+    title: "Consultar Libro - Biblioteca de la FISI",
     layout: "layouts/main",
   });
 });
 
 app.get("/solicitar-prestamo", (req, res) => {
   res.render("components/solicitar-prestamo-page/solicitar-prestamo", {
-    nombre: "UNMSM",
-    titulo: "Biblioteca de la FISI",
+    title: "Solicitar Préstamo - Biblioteca de la FISI",
     layout: "layouts/main",
   });
 });
@@ -45,19 +46,19 @@ app.get("/actualizar-estado-de-prestamo", (req, res) => {
   res.render(
     "components/actualizar-estado-de-prestamo-page/actualizar-estado-de-prestamo",
     {
-      nombre: "UNMSM",
-      titulo: "Biblioteca de la FISI",
+      title: "Actualizar Estado de Préstamo - Biblioteca de la FISI",
       layout: "layouts/main",
     }
   );
 });
 
+// Añade más rutas según sea ne
+
 app.get("/consultar-historial-de-prestamos", (req, res) => {
   res.render(
     "components/consultar-historial-de-prestamos-page/consultar-historial-de-prestamos",
     {
-      nombre: "UNMSM",
-      titulo: "Biblioteca de la FISI",
+      title: "Consultar Historial de Prestamos - Biblioteca de la FISI",
       layout: "layouts/main",
     }
   );
@@ -65,16 +66,14 @@ app.get("/consultar-historial-de-prestamos", (req, res) => {
 
 app.get("/reservar-cubiculo", (req, res) => {
   res.render("components/reservar-cubiculo-page/reservar-cubiculo", {
-    nombre: "UNMSM",
-    titulo: "Biblioteca de la FISI",
+    title: "Reservar Cubículo - Biblioteca de la FISI",
     layout: "layouts/main",
   });
 });
 
 app.get("/consultar-cubiculo", (req, res) => {
   res.render("components/consultar-cubiculo-page/consultar-cubiculo", {
-    nombre: "UNMSM",
-    titulo: "Biblioteca de la FISI",
+    title: "Consultar cubículo - Biblioteca de la FISI",
     layout: "layouts/main",
   });
 });
@@ -83,8 +82,7 @@ app.get("/actualizar-estado-de-cubiculo", (req, res) => {
   res.render(
     "components/actualizar-estado-de-cubiculo-page/actualizar-estado-de-cubiculo",
     {
-      nombre: "UNMSM",
-      titulo: "Biblioteca de la FISI",
+      title: "Actualizar Estado de Cubículo - Biblioteca de la FISI",
       layout: "layouts/main",
     }
   );
